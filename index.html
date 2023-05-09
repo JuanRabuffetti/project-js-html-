@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/obli P1/js/codigo.js"></script>
+</head>
+
+<body>
+    <div id="divBotonesInicio">
+        <h1>ENTRAR</h1>
+        <input type="button" value="registrase" id="btnRinicio">
+        <input type="button" value="Logearse" id="btnLinicio">
+    </div>
+
+    <div id="divRegister">
+        <h1>Register</h1>
+        <input type="text" placeholder="Ingrese Nombre" id="txtNombre">
+        <br>
+        <input type="text" placeholder="Ingrese Nombre de Usuario" id="txtUsuario">
+        <br>
+        <input type="password" placeholder="Ingrese contrasena" id="txtPassword">
+        <br>
+        <input type="file" id="foto">
+        <br>
+        <input type="button" value="ingresar" id="btnRegister">
+        <p id="etqMensaje"></p>
+        <input type="button" value="Iniciar Sesion" id="btnIniciarSesion">
+    </div>
+
+
+
+
+    <div id="divLogin">
+        <h1>Login</h1>
+        <input type="text" placeholder="ingrese Nombre De Usuario" id="txtUsu">
+        <br>
+        <input type="password" placeholder="ingrese Contrasena" id="txtPassL">
+        <input type="button" value="Logearse" id="btnLogearse">
+        <p id="etqLogin"></p>
+    </div>
+    <br>
+    <!--contengo el menu por el cual navego como importador-->
+    <div id="divContenedorImportador">
+        <h1>MENU IMPORTADOR</h1>
+        <p id="usuario"></p>
+        <input type="button" value="hacer Solicitud" id="btnSolicitud">
+        <input type="button" value="mis solicitudes" id="btnVerSolicitudes">
+        <input type="button" value="cerrar sesion" id="btnCerrarSesion">
+
+    </div>
+    <div id="divHacerSolicitud">
+        <h2>realizar Solicitud</h2>
+        <select name="" id="slcTipo">
+            <option value="CARGA_GENERAL">CARGA_GENERAL</option>
+            <option value="REFRIGERADO">REFRIGERADO</option>
+            <option value="CARGA_PELIGROSA">CARGA_PELIGROSA</option>
+        </select>
+        <br>
+
+        <input type="text" placeholder="descripcion de mercaderia" id="txtDescripcion">
+        <br>
+        <input type="text" placeholder="puerto de origen" id="txtOrigen">
+        <br>
+        <input type="number" placeholder="cantidad de contenedores" id="txtCantContenedores">
+        <br>
+        <label for="slcEmpresaFav">elegir empresa favorita: </label>
+        <select name="" id="slcEmpresaFav"></select>
+        <br>
+        <input type="button" value="realizar pedido" id="btnPedido">
+        <p id="etqPedido"></p>
+
+    </div>
+
+    <br>
+    <div id="divListarSolicitudes">
+        <input type="text" placeholder="buscar Solicitud" id="txtBuscarSolicitud">
+        <input type="button" value="ingresar" id="btnBuscarSolicitud">
+        <div id="tablaSolicitudes">
+
+        </div>
+    </div>
+
+
+    <div id="divEmpresa">
+        <h1>MENU EMPRESA</h1>
+        <p id="etqEmpresa"></p>
+        <input type="button" value="crear Viaje" id="btnCrearViaje">
+        <input type="button" value="asignar Solicitudes" id="btnAsignarSolicitudes">
+        <input type="button" value="Cerrar Sesion" id="btnCerrarSesionE">
+    </div>
+
+    <br>
+    <div id="divCrearViaje">
+
+        <h1>crear viaje</h1>
+
+        <input type="text" placeholder="Nombre del Buque" id="txtNombreBuque">
+        <br>
+        <input type="number" placeholder="Cantidad Maxima de contenedores" id="txtCantMaxCont">
+        <br>
+        <select name="" id="slcEmpresas"></select>
+        <br>
+        <input type="date" value="fecha" id="txtFecha">
+        <br>
+        <input type="button" value="crear viaje " id="btnCrearViaje">
+        <p id="etqViaje"></p>
+    </div>
+
+
+    <div id="divAsignarSolicitud">
+        <h1>asignar solicitudes a un viaje</h1>
+        <div id="tablaViajes">
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
